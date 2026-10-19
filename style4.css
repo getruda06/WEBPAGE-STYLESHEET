@@ -1,0 +1,52 @@
+body {
+    background-color: #111;
+    color: #4e8e4e;
+    font-family: 'Courier New', monospace;
+}
+
+.menu{
+    width: 180px;
+    float: left;
+    padding: 15px;
+}
+
+
+.menu a {
+    display: block;
+    color: #4e8e4e;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.menu a::before {
+    content: ".";
+}
+
+.menu a.active {
+    color: white;
+    font-weight: bold;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+h1 {
+    color: #00ff00;
+}
+
+h2 {
+    color: #00ff00;
+}
+
+p {
+    color: #4e8e4e;
+}
+
+ul {
+    color: #4e8e4e;
+}

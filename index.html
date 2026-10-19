@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same page different stylesheet</title>
+    <link id="pagestyle" rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="#" class="style-link" onclick="changeStyle('style1.css', this); return false;">
+            stylesheet1
+        </a>
+        <a href="#" class="style-link" onclick="changeStyle('style2.css', this); return false;">
+            stylesheet2
+        </a>
+        <a href="#" class="style-link" onclick="changeStyle('style3.css', this); return false;">
+            stylesheet3
+        </a>
+        <a href="#" class="style-link" onclick="changeStyle('style4.css', this); return false;">
+            stylesheet4
+        </a>
+        <a href="#" class="style-link" onclick="noStyle(this); return false;">
+            No stylesheet
+        </a>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to my Homepage</h1>
+        <p>Use the menu to select different stylesheets</p>
+        <h2>Same page different stylesheets</h2>
+        <p>This is a demonstration of how different stylesheets can changeStyle
+            the layout of your HTML. You can change the layout of
+            this page by selecting different stylesheets.
+        </p>
+
+        <ul>
+            <li>Stylesheet 1</li>
+             <li>Stylesheet 2</li>
+              <li>Stylesheet 3</li>
+               <li>Stylesheet 4</li>
+                <li>No Styles</li>
+        </ul>
+
+        <h2>No styles</h2>
+
+        <p>This page uses DIV elements to group 
+            different sections of the HTML page</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
